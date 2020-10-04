@@ -1,0 +1,10 @@
+hbase shell
+
+#create table
+create 'pageRate', 'rate'
+
+#put init data
+put 'pageRate', 'page1', 'rate:score', '0.00'
+
+#scan table
+scan 'pageRate'
